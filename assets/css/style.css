@@ -1,0 +1,1002 @@
+/* ==========================================================================
+   Mahoroba Lab (まほろばラボ) - Official Portal & Documentation Stylesheet
+   Light-mode only, Japanese indie software workshop / catalog aesthetic.
+   ========================================================================== */
+
+:root {
+  --bg-page: #F7F6F2;
+  --bg-card: #FFFFFF;
+  --bg-subtle: #EFECE6;
+  --bg-weather: #F2F7FA;
+  --border-weather: #C7D9E5;
+  --text-primary: #1E293B;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --accent: #0F766E;
+  --accent-hover: #115E59;
+  --accent-soft: #ECFDF5;
+  --accent-border: #99F6E4;
+  --border: #DCDAD3;
+  --border-strong: #C5C2B8;
+  --radius-sm: 4px;
+  --radius-btn: 5px;
+  --radius-md: 5px;
+  --radius-lg: 6px;
+  --container-width: 1120px;
+  --doc-width: 840px;
+  --font-sans: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", "Yu Gothic", "Meiryo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", Consolas, ui-monospace, SFMono-Regular, Menlo, Monaco, "Courier New", monospace;
+}
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: -0.015em;
+}
+
+p {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding-left: 1.4rem;
+}
+
+li + li {
+  margin-top: 0.4rem;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.12em 0.4em;
+  color: var(--text-primary);
+}
+
+.ib {
+  display: inline-block;
+}
+
+/* Monospace Category / Spec Labels */
+.mono-label {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.doc-container {
+  width: 100%;
+  max-width: var(--doc-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Header */
+.site-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  min-height: 60px;
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+}
+
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 1.03125rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand-link:hover {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.brand-mark-svg {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  color: var(--text-secondary);
+  font-size: 0.90625rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s ease;
+  white-space: nowrap;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Language Switcher */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-page);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.lang-switch span,
+.lang-switch a {
+  display: inline-block;
+  padding: 0.22rem 0.6rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.lang-switch .lang-active {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.lang-switch a {
+  color: var(--text-muted);
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.lang-switch a:hover {
+  color: var(--accent);
+  background-color: var(--bg-card);
+  text-decoration: none;
+}
+
+/* Compact 2-Column Intro (Hero Replacement) */
+.intro-band {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  padding: 2.25rem 0;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  align-items: center;
+  gap: 2.25rem;
+}
+
+.intro-copy .mono-label {
+  margin-bottom: 0.5rem;
+}
+
+.intro-title {
+  font-size: clamp(1.375rem, 2.5vw, 1.875rem);
+  font-weight: 700;
+  line-height: 1.38;
+  margin-bottom: 0.75rem;
+}
+
+.intro-lead {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  max-width: 560px;
+}
+
+/* Lightweight UI Mockup on Right */
+.intro-mockup {
+  background-color: var(--bg-page);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 0.75rem;
+}
+
+.intro-mockup svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 0;
+}
+
+.section-compact {
+  padding: 2.5rem 0;
+}
+
+.section-divider {
+  border-top: 1px solid var(--border);
+}
+
+.section-header {
+  margin-bottom: 1.5rem;
+}
+
+.section-header-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.section-title {
+  font-size: 1.3125rem;
+  font-weight: 700;
+}
+
+.section-desc {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+}
+
+/* App Grid & Tool Cards */
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-card-header {
+  margin-bottom: 0.75rem;
+}
+
+.app-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.app-price-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background-color: var(--bg-page);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.12rem 0.45rem;
+  white-space: nowrap;
+}
+
+.app-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-bottom: 0.4rem;
+}
+
+.app-icon-box {
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-page);
+  border: 1px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--accent);
+}
+
+.app-icon-box svg {
+  width: 18px;
+  height: 18px;
+}
+
+.app-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.app-tagline {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  min-height: 2.8em;
+}
+
+/* Screenshot Frame (16:9, SVG illustration ready to swap with <img>) */
+.screenshot-frame {
+  aspect-ratio: 16 / 9;
+  background-color: var(--bg-page);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.25rem 0 1rem;
+  overflow: hidden;
+}
+
+.screenshot-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.screenshot-frame svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Card Actions: 50/50 Buttons + Subtle Help Link */
+.card-actions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.btn-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0.875rem;
+  font-family: inherit;
+  font-size: 0.84375rem;
+  font-weight: 600;
+  line-height: 1.35;
+  border-radius: var(--radius-btn);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  text-align: center;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-page);
+  border-color: var(--text-muted);
+}
+
+.card-help-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border);
+  padding-top: 0.65rem;
+  transition: color 0.15s ease;
+}
+
+.card-help-link:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* SBOM Weather Horizontal Banner Card */
+.weather-banner {
+  background-color: var(--bg-weather);
+  border: 1px solid var(--border-weather);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.75rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.weather-badge-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.75rem 1rem;
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-weather);
+  border-radius: var(--radius-md);
+  min-width: 124px;
+  text-align: center;
+}
+
+.weather-badge-col svg {
+  width: 30px;
+  height: 30px;
+}
+
+.weather-dev-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: #0369A1;
+  letter-spacing: 0.03em;
+}
+
+.weather-content-col {
+  min-width: 0;
+}
+
+.service-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.35rem;
+}
+
+.service-title {
+  font-size: 1.1875rem;
+  font-weight: 700;
+}
+
+.service-desc {
+  color: var(--text-secondary);
+  font-size: 0.90625rem;
+  line-height: 1.7;
+}
+
+.weather-action-col {
+  flex-shrink: 0;
+}
+
+/* Accordions (FAQ & Privacy Policy) */
+.accordion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  width: 100%;
+}
+
+.accordion-item {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.accordion-summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 0.95rem 1.25rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  user-select: none;
+}
+
+.accordion-summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-summary::after {
+  content: "+";
+  font-family: var(--font-mono);
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.accordion-item[open] .accordion-summary::after {
+  content: "−";
+  color: var(--accent);
+}
+
+.accordion-item[open] .accordion-summary {
+  border-bottom: 1px solid var(--border);
+}
+
+.accordion-body {
+  padding: 1rem 1.25rem 1.15rem;
+  color: var(--text-secondary);
+  font-size: 0.90625rem;
+  line-height: 1.75;
+}
+
+.accordion-body p + p,
+.accordion-body p + ul,
+.accordion-body p + ol,
+.accordion-body ul + p,
+.accordion-body ol + p {
+  margin-top: 0.7rem;
+}
+
+.policy-article + .policy-article {
+  margin-top: 1.125rem;
+  padding-top: 1.125rem;
+  border-top: 1px solid var(--border);
+}
+
+.policy-article h3 {
+  font-size: 0.96875rem;
+  margin-bottom: 0.35rem;
+}
+
+.policy-meta {
+  margin-top: 1.125rem;
+  padding-top: 0.875rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+/* Footer / Contact */
+.site-footer {
+  background-color: var(--bg-card);
+  border-top: 1px solid var(--border);
+  padding: 2.75rem 0 2rem;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.footer-title {
+  font-size: 1.0625rem;
+}
+
+.footer-desc {
+  color: var(--text-secondary);
+  font-size: 0.90625rem;
+  max-width: 680px;
+}
+
+.footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.footer-bottom {
+  padding-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.84375rem;
+  color: var(--text-muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   App Help / Documentation Subpages
+   ========================================================================== */
+.doc-main {
+  padding: 2.25rem 0 4rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84375rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.breadcrumb a {
+  color: var(--text-secondary);
+}
+
+.doc-header {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.75rem;
+}
+
+.doc-header .mono-label,
+.doc-label {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.doc-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.45rem;
+}
+
+.doc-title {
+  font-size: clamp(1.5rem, 3vw, 1.875rem);
+}
+
+.doc-subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.doc-download-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.doc-section {
+  margin-bottom: 2.25rem;
+}
+
+.doc-section h2 {
+  font-size: 1.1875rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0.875rem;
+}
+
+.doc-section h3 {
+  font-size: 1rem;
+  margin: 1.125rem 0 0.45rem;
+}
+
+.doc-section p,
+.doc-section ul,
+.doc-section ol {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.8;
+}
+
+.doc-section p + p,
+.doc-section p + ul,
+.doc-section p + ol {
+  margin-top: 0.75rem;
+}
+
+.callout {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1.15rem;
+  margin: 1.125rem 0;
+  font-size: 0.90625rem;
+  color: var(--text-secondary);
+}
+
+.callout strong {
+  color: var(--text-primary);
+}
+
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.75rem;
+  font-size: 0.90625rem;
+  background-color: var(--bg-card);
+}
+
+.spec-table th,
+.spec-table td {
+  padding: 0.7rem 0.95rem;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.spec-table th {
+  width: 30%;
+  background-color: var(--bg-subtle);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.spec-table td {
+  color: var(--text-secondary);
+}
+
+.doc-nav-footer {
+  margin-top: 2.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .apps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .weather-banner {
+    grid-template-columns: 1fr;
+    gap: 1.125rem;
+  }
+
+  .weather-badge-col {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: fit-content;
+    padding: 0.5rem 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container,
+  .doc-container {
+    padding: 0 20px;
+  }
+
+  .header-inner {
+    flex-wrap: wrap;
+    min-height: auto;
+    gap: 0.625rem 0.75rem;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+  }
+
+  .header-right {
+    display: contents;
+  }
+
+  .brand-link {
+    order: 1;
+  }
+
+  .lang-switch {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .site-nav {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid var(--border);
+    padding-top: 0.55rem;
+    gap: 0.4rem 0.65rem;
+  }
+
+  .site-nav a {
+    font-size: 0.75rem;
+  }
+
+  .intro-band {
+    padding: 1.75rem 0;
+  }
+
+  .intro-title {
+    font-size: clamp(1.25rem, 5vw, 1.625rem);
+    line-height: 1.42;
+  }
+
+  .intro-lead {
+    font-size: 0.90625rem;
+  }
+
+  .section,
+  .section-compact {
+    padding: 2.25rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 1.25rem;
+  }
+
+  .apps-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1.125rem;
+  }
+
+  .card,
+  .weather-banner,
+  .accordion-item {
+    min-width: 0;
+  }
+
+  .app-tagline {
+    min-height: 0;
+  }
+
+  .weather-banner {
+    padding: 1.25rem;
+  }
+
+  .weather-action-col,
+  .weather-action-col .btn {
+    width: 100%;
+  }
+
+  .accordion-summary {
+    padding: 0.9rem 1.05rem;
+    font-size: 0.90625rem;
+  }
+
+  .accordion-body {
+    padding: 0.95rem 1.05rem 1.1rem;
+  }
+
+  .spec-table th {
+    width: 38%;
+  }
+
+  .spec-table th,
+  .spec-table td {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.875rem;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 360px) {
+  .container,
+  .doc-container {
+    padding: 0 16px;
+  }
+
+  .intro-title {
+    font-size: clamp(1.1875rem, 5.2vw, 1.4rem);
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .btn-pair {
+    gap: 0.4rem;
+  }
+
+  .btn-pair .btn {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8125rem;
+  }
+}

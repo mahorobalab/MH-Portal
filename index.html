@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>まほろばラボ（Mahoroba Lab）| 公式ポータル・ヘルプ</title>
+  <meta name="description" content="まほろばラボ（Mahoroba Lab）が提供するWindows向け軽量ユーティリティ群およびWebサービスの公式ポータル・共通ヘルプ・プライバシーポリシーです。">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link">
+        <svg class="brand-mark-svg" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="2" y="2" width="28" height="28" rx="5" fill="#0F766E"/>
+          <path d="M9 22V11L16 17L23 11V22" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="16" cy="9.5" r="1.5" fill="#99F6E4"/>
+        </svg>
+        <span>まほろばラボ</span>
+      </a>
+      <div class="header-right">
+        <nav class="site-nav" aria-label="メインナビゲーション">
+          <a href="#apps">アプリ一覧</a>
+          <a href="#faq">よくある質問</a>
+          <a href="#privacy">プライバシーポリシー</a>
+          <a href="#contact">お問い合わせ</a>
+        </nav>
+        <div class="lang-switch" aria-label="言語切替">
+          <span class="lang-active" aria-current="page">日本語</span>
+          <a href="en/index.html" lang="en">English</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Compact 2-Column Intro -->
+    <section class="intro-band">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-copy">
+            <span class="mono-label">MAHOROBA LAB / DESKTOP &amp; WEB</span>
+            <h1 class="intro-title">「あとちょっと便利に」を形にする<br class="hero-br">小さなソフトウェア工房</h1>
+            <p class="intro-lead">
+              配信者やPCユーザー、Web制作者の日々の作業を支える軽量WindowsツールとWebサービスを開発・公開しています。余計な常駐や外部送信を行わず、必要な機能だけを静かに・確実に動かします。
+            </p>
+          </div>
+          <div class="intro-mockup" aria-hidden="true">
+            <svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Desktop Frame -->
+              <rect x="1" y="1" width="398" height="218" rx="4" fill="#FFFFFF" stroke="#DCDAD3"/>
+              <rect x="1" y="1" width="398" height="24" rx="4" fill="#EFECE6"/>
+              <line x1="1" y1="25" x2="399" y2="25" stroke="#DCDAD3"/>
+              <circle cx="14" cy="13" r="3" fill="#C5C2B8"/>
+              <circle cx="24" cy="13" r="3" fill="#C5C2B8"/>
+              <circle cx="34" cy="13" r="3" fill="#C5C2B8"/>
+              <text x="52" y="16.5" fill="#64748B" font-family="Consolas, monospace" font-size="9.5">DESKTOP WORKSPACE</text>
+
+              <!-- Simulated App Content Lines -->
+              <rect x="20" y="42" width="160" height="10" rx="2" fill="#EFECE6"/>
+              <rect x="20" y="60" width="210" height="8" rx="2" fill="#F7F6F2"/>
+              <rect x="20" y="74" width="180" height="8" rx="2" fill="#F7F6F2"/>
+
+              <!-- Red Highlight Frame (MHTranSquare) -->
+              <rect x="150" y="92" width="150" height="68" rx="2" fill="#FEF2F2" fill-opacity="0.45" stroke="#DC2626" stroke-width="2"/>
+              <rect x="150" y="80" width="64" height="12" rx="2" fill="#DC2626"/>
+              <text x="156" y="89" fill="#FFFFFF" font-family="Consolas, monospace" font-size="8">FOCUS AREA</text>
+
+              <!-- Translucent Overlay Window (MHTranScreen) -->
+              <rect x="255" y="40" width="124" height="72" rx="3" fill="#F0FDFA" fill-opacity="0.82" stroke="#0F766E" stroke-width="1.2" stroke-dasharray="3 2"/>
+              <text x="265" y="56" fill="#0F766E" font-family="Consolas, monospace" font-size="8.5" font-weight="bold">TRANSPARENT</text>
+              <rect x="265" y="66" width="84" height="6" rx="1.5" fill="#99F6E4"/>
+              <rect x="265" y="78" width="64" height="6" rx="1.5" fill="#CCFBF1"/>
+
+              <!-- Floating Keystroke Overlay (MHTranStroke) -->
+              <rect x="20" y="164" width="126" height="36" rx="4" fill="#1E293B"/>
+              <rect x="29" y="172" width="40" height="20" rx="3" fill="#334155" stroke="#64748B" stroke-width="1"/>
+              <text x="38" y="185.5" fill="#FFFFFF" font-family="Consolas, monospace" font-size="10" font-weight="bold">Ctrl</text>
+              <text x="76" y="185.5" fill="#94A3B8" font-family="Consolas, monospace" font-size="11">+</text>
+              <rect x="90" y="172" width="24" height="20" rx="3" fill="#334155" stroke="#64748B" stroke-width="1"/>
+              <text x="98.5" y="185.5" fill="#FFFFFF" font-family="Consolas, monospace" font-size="10" font-weight="bold">S</text>
+              <circle cx="131" cy="182" r="3" fill="#2DD4BF"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Windows Desktop Tools Catalog -->
+    <section id="apps" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header-row">
+            <h2 class="section-title">Windowsデスクトップツール</h2>
+            <span class="mono-label">WIN UTILITY / PORTABLE &amp; STORE</span>
+          </div>
+          <p class="section-desc">BOOTH（ポータブル版）および Microsoft Store にて公開しています。操作方法や仕様は各ツールのヘルプからご確認いただけます。</p>
+        </div>
+
+        <div class="apps-grid">
+          <!-- MHTranStroke -->
+          <article class="card">
+            <div class="app-card-header">
+              <div class="app-meta-row">
+                <span class="mono-label">WIN-01 / KEYSTROKE</span>
+                <span class="app-price-tag">300円 / Windows 10・11</span>
+              </div>
+              <div class="app-title-row">
+                <span class="app-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="6" width="20" height="12" rx="2"/>
+                    <path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/>
+                  </svg>
+                </span>
+                <h3 class="app-name">MHTranStroke</h3>
+              </div>
+              <p class="app-tagline">配信・チュートリアル動画向けのリアルタイムキー入力表示ツール</p>
+            </div>
+            <div class="screenshot-frame" aria-label="MHTranStroke UIイメージ">
+              <svg viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="180" fill="#F7F6F2"/>
+                <!-- Subtle grid -->
+                <path d="M0 45H320M0 90H320M0 135H320M80 0V180M160 0V180M240 0V180" stroke="#EAE7DF" stroke-width="1"/>
+                <!-- Keycap group 1 -->
+                <rect x="38" y="62" width="66" height="38" rx="4" fill="#FFFFFF" stroke="#C5C2B8" stroke-width="1.5"/>
+                <rect x="42" y="65" width="58" height="30" rx="2.5" fill="#F7F6F2"/>
+                <text x="56" y="84" fill="#1E293B" font-family="Consolas, monospace" font-size="13" font-weight="bold">Ctrl</text>
+                <text x="112" y="85" fill="#64748B" font-family="Consolas, monospace" font-size="14" font-weight="bold">+</text>
+                <rect x="130" y="62" width="66" height="38" rx="4" fill="#FFFFFF" stroke="#C5C2B8" stroke-width="1.5"/>
+                <rect x="134" y="65" width="58" height="30" rx="2.5" fill="#F7F6F2"/>
+                <text x="144" y="84" fill="#1E293B" font-family="Consolas, monospace" font-size="13" font-weight="bold">Shift</text>
+                <text x="204" y="85" fill="#64748B" font-family="Consolas, monospace" font-size="14" font-weight="bold">+</text>
+                <rect x="222" y="62" width="54" height="38" rx="4" fill="#0F766E" stroke="#115E59" stroke-width="1.5"/>
+                <text x="244" y="85" fill="#FFFFFF" font-family="Consolas, monospace" font-size="14" font-weight="bold">S</text>
+                <!-- Status bar -->
+                <rect x="38" y="114" width="238" height="18" rx="3" fill="#EFECE6"/>
+                <circle cx="50" cy="123" r="3" fill="#0F766E"/>
+                <text x="60" y="126.5" fill="#475569" font-family="Consolas, monospace" font-size="9.5">REAL-TIME KEYSTROKE OVERLAY</text>
+              </svg>
+            </div>
+            <div class="card-actions">
+              <div class="btn-pair">
+                <a href="https://mahorobalab.booth.pm/items/9150270" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOTH</a>
+                <a href="https://apps.microsoft.com/detail/9N3MZCJGKTMC" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">MS Store</a>
+              </div>
+              <a href="apps/mhtranstroke.html" class="card-help-link">使い方・ヘルプを見る →</a>
+            </div>
+          </article>
+
+          <!-- MHTranSquare -->
+          <article class="card">
+            <div class="app-card-header">
+              <div class="app-meta-row">
+                <span class="mono-label">WIN-02 / HIGHLIGHT</span>
+                <span class="app-price-tag">300円 / Windows 10・11</span>
+              </div>
+              <div class="app-title-row">
+                <span class="app-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="4" y="4" width="16" height="16" rx="1.5" stroke-dasharray="3 2.5"/>
+                    <path d="M4 8V4h4M16 4h4v4M4 16v4h4M16 20h4v-4"/>
+                  </svg>
+                </span>
+                <h3 class="app-name">MHTranSquare</h3>
+              </div>
+              <p class="app-tagline">画面上の指定領域をシンプルに枠表示・強調できるツール</p>
+            </div>
+            <div class="screenshot-frame" aria-label="MHTranSquare UIイメージ">
+              <svg viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="180" fill="#F7F6F2"/>
+                <path d="M0 45H320M0 90H320M0 135H320M80 0V180M160 0V180M240 0V180" stroke="#EAE7DF" stroke-width="1"/>
+                <!-- Background UI Window -->
+                <rect x="34" y="24" width="252" height="132" rx="4" fill="#FFFFFF" stroke="#DCDAD3"/>
+                <rect x="48" y="38" width="90" height="10" rx="2" fill="#EFECE6"/>
+                <rect x="48" y="56" width="140" height="8" rx="2" fill="#F7F6F2"/>
+                <rect x="48" y="70" width="110" height="8" rx="2" fill="#F7F6F2"/>
+                <!-- Red Selection Frame -->
+                <rect x="116" y="78" width="148" height="64" rx="2" fill="#FEF2F2" fill-opacity="0.55" stroke="#DC2626" stroke-width="2.5"/>
+                <!-- Corner handles -->
+                <rect x="112" y="74" width="7" height="7" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.5"/>
+                <rect x="260" y="74" width="7" height="7" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.5"/>
+                <rect x="112" y="138" width="7" height="7" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.5"/>
+                <rect x="260" y="138" width="7" height="7" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.5"/>
+                <rect x="116" y="64" width="74" height="14" rx="2" fill="#DC2626"/>
+                <text x="122" y="74" fill="#FFFFFF" font-family="Consolas, monospace" font-size="8.5" font-weight="bold">TARGET REGION</text>
+              </svg>
+            </div>
+            <div class="card-actions">
+              <div class="btn-pair">
+                <a href="https://mahorobalab.booth.pm/items/9150044" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOTH</a>
+                <a href="https://apps.microsoft.com/detail/9MWCC31HVM4F" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">MS Store</a>
+              </div>
+              <a href="apps/mhtransquare.html" class="card-help-link">使い方・ヘルプを見る →</a>
+            </div>
+          </article>
+
+          <!-- MHTranScreen -->
+          <article class="card">
+            <div class="app-card-header">
+              <div class="app-meta-row">
+                <span class="mono-label">WIN-03 / OVERLAY</span>
+                <span class="app-price-tag">300円 / Windows 10・11</span>
+              </div>
+              <div class="app-title-row">
+                <span class="app-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="13" height="11" rx="1.5"/>
+                    <rect x="8" y="9" width="13" height="11" rx="1.5" fill="#F7F6F2" stroke-dasharray="2.5 2"/>
+                  </svg>
+                </span>
+                <h3 class="app-name">MHTranScreen</h3>
+              </div>
+              <p class="app-tagline">画面の透過・表示補助を行う軽量ユーティリティ</p>
+            </div>
+            <div class="screenshot-frame" aria-label="MHTranScreen UIイメージ">
+              <svg viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="180" fill="#F7F6F2"/>
+                <path d="M0 45H320M0 90H320M0 135H320M80 0V180M160 0V180M240 0V180" stroke="#EAE7DF" stroke-width="1"/>
+                <!-- Base window -->
+                <rect x="44" y="28" width="152" height="96" rx="3" fill="#FFFFFF" stroke="#C5C2B8" stroke-width="1.2"/>
+                <rect x="44" y="28" width="152" height="18" rx="3" fill="#EFECE6"/>
+                <rect x="58" y="58" width="110" height="8" rx="2" fill="#DCDAD3"/>
+                <rect x="58" y="74" width="90" height="8" rx="2" fill="#EFECE6"/>
+                <rect x="58" y="90" width="120" height="8" rx="2" fill="#EFECE6"/>
+                <!-- Semi-transparent overlay window -->
+                <rect x="118" y="56" width="158" height="96" rx="3" fill="#0F766E" fill-opacity="0.12" stroke="#0F766E" stroke-width="1.5" stroke-dasharray="4 2.5"/>
+                <rect x="118" y="56" width="158" height="20" rx="3" fill="#0F766E" fill-opacity="0.18"/>
+                <text x="128" y="69.5" fill="#0F766E" font-family="Consolas, monospace" font-size="9" font-weight="bold">OPACITY: 65%</text>
+                <rect x="132" y="88" width="110" height="8" rx="2" fill="#0F766E" fill-opacity="0.25"/>
+                <rect x="132" y="104" width="84" height="8" rx="2" fill="#0F766E" fill-opacity="0.2"/>
+              </svg>
+            </div>
+            <div class="card-actions">
+              <div class="btn-pair">
+                <a href="https://mahorobalab.booth.pm/items/9150259" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOTH</a>
+                <a href="https://apps.microsoft.com/detail/9ND15SXK505D" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">MS Store</a>
+              </div>
+              <a href="apps/mhtranscreen.html" class="card-help-link">使い方・ヘルプを見る →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Web Service in Development (Horizontal Banner Card) -->
+    <section id="web-services" class="section section-compact section-divider">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header-row">
+            <h2 class="section-title">開発中のWebサービス</h2>
+            <span class="mono-label">WEB SERVICE / COMING SOON</span>
+          </div>
+          <p class="section-desc">Windowsツールとあわせて開発を進めている、Web制作者・サイト運営者向けサービスです。</p>
+        </div>
+
+        <article class="weather-banner">
+          <div class="weather-badge-col">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+            </svg>
+            <span class="weather-dev-label">開発中プロジェクト</span>
+          </div>
+
+          <div class="weather-content-col">
+            <div class="service-title-row">
+              <h3 class="service-title">SBOM ウェザー</h3>
+              <span class="mono-label">COMING SOON</span>
+            </div>
+            <p class="service-desc">
+              サイトのプラグインやライブラリの脆弱性・健康状態を『お天気』で直感的に監視するWebサービス。専門的なセキュリティレポートを読み解く手間を減らし、運用中のWebサイトの状態を晴れ・曇り・雨の天気予報のようにひと目で把握できるよう開発を進めています。
+            </p>
+          </div>
+
+          <div class="weather-action-col">
+            <a href="https://x.com/mahorobalab" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              開発進捗を見る（X）→
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Common Help & FAQ -->
+    <section id="faq" class="section section-compact section-divider">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header-row">
+            <h2 class="section-title">共通ヘルプ・よくある質問（FAQ）</h2>
+            <span class="mono-label">SUPPORT / FAQ</span>
+          </div>
+          <p class="section-desc">まほろばラボのWindowsツール全般に共通する操作方法・トラブルシューティングです。</p>
+        </div>
+
+        <div class="accordion-list">
+          <details class="accordion-item">
+            <summary class="accordion-summary">Q. BOOTH版を起動した際「WindowsによってPCが保護されました（SmartScreen）」と表示されます</summary>
+            <div class="accordion-body">
+              <p>BOOTHで配布しているポータブル版は個人開発による実行ファイルであるため、ダウンロード直後や利用者が少ない段階でMicrosoft Defender SmartScreenの警告画面が表示される場合があります。</p>
+              <p>公式配布ページ（BOOTH）から直接ダウンロードしたファイルであることをご確認のうえ、以下の手順で起動してください。</p>
+              <ol>
+                <li>警告画面内の「<strong>詳細情報</strong>」をクリックします。</li>
+                <li>画面下部に表示される「<strong>実行</strong>」ボタンをクリックします。</li>
+              </ol>
+              <p>※一度実行を許可すると、次回以降は警告なしで起動できます。なお、Microsoft Store版ではStore側の審査・署名を経由して配布されるため、この警告は表示されません。</p>
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary class="accordion-summary">Q. OBS Studioで正しくキャプチャ・透過表示させるにはどうすればよいですか？</summary>
+            <div class="accordion-body">
+              <p>各ツールをOBS Studio上で背景透過のまま重ねて表示したい場合は、「ウィンドウキャプチャ」または「ゲームキャプチャ」の設定をご確認ください。</p>
+              <ol>
+                <li>OBSの「ソース」から「<strong>ウィンドウキャプチャ</strong>」を追加し、対象のアプリウィンドウを選択します。</li>
+                <li>キャプチャ方法が表示されない・透過されない場合は、プロパティの「キャプチャ方法」を「<strong>Windows 10 (1903以降)</strong>」に変更してみてください。</li>
+                <li>透過背景に対応したツールで「透過を許可」オプションが利用できる場合は有効にします。ゲームキャプチャを使用する場合は、プロパティ内の「<strong>透過を許可</strong>」にチェックを入れてください。</li>
+              </ol>
+              <p>各アプリ固有の推奨設定については、各アプリの「使い方・ヘルプを見る」ページもあわせてご参照ください。</p>
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary class="accordion-summary">Q. アンインストール方法を教えてください</summary>
+            <div class="accordion-body">
+              <p>ご利用の配布形態によって手順が異なります。</p>
+              <ul>
+                <li><strong>BOOTH版（ポータブル版）：</strong>インストーラーを使用していないため、レジストリ等への登録は行われません。アプリを終了した状態で、展開したフォルダごと削除するだけでアンインストールは完了します。</li>
+                <li><strong>Microsoft Store版：</strong>Windowsの「設定」＞「アプリ」＞「インストールされているアプリ」から該当アプリを選び、「アンインストール」をクリックしてください。</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy Policy (Compact Accordion) -->
+    <section id="privacy" class="section section-compact section-divider">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header-row">
+            <h2 class="section-title">プライバシーポリシー</h2>
+            <span class="mono-label">POLICY / LOCAL-FIRST</span>
+          </div>
+          <p class="section-desc">Microsoft Store審査対応を含む、当ラボ製品の情報取り扱い方針です。</p>
+        </div>
+
+        <div class="accordion-list">
+          <details id="privacy-details" class="accordion-item">
+            <summary class="accordion-summary">プライバシーポリシーを読む（ローカル完結処理とバージョン確認通信について）</summary>
+            <div class="accordion-body">
+              <div class="policy-article">
+                <h3>1. ユーザーデータのローカル処理と非収集</h3>
+                <p>
+                  当ラボが提供する各アプリケーションにおいて、ユーザーが入力したキー情報、画面上の表示領域やキャプチャ情報、設定内容などのデータは、<strong>すべてご利用のローカル端末内のみで処理</strong>されます。これらの情報が外部サーバーへ送信・保存・収集されることは一切ありません。
+                </p>
+              </div>
+
+              <div class="policy-article">
+                <h3>2. バージョン確認のための通信</h3>
+                <p>
+                  アプリの最新バージョンを確認し、更新の有無をお知らせする目的で、GitHub上に配置された公開JSONファイルへの読み取り専用通信（HTTPS GETリクエスト）を行う場合があります。この通信において、個人を特定できる情報や端末内のユーザーデータが送信されることはありません。
+                </p>
+              </div>
+
+              <div class="policy-article">
+                <h3>3. 第三者への提供</h3>
+                <p>
+                  当ラボのアプリケーションはユーザーデータを収集しないため、個人情報を第三者へ提供・共有することはありません。
+                </p>
+              </div>
+
+              <div class="policy-article">
+                <h3>4. お問い合わせおよび改定</h3>
+                <p>
+                  本プライバシーポリシーに関するお問い合わせは、公式Xアカウント（@mahorobalab）までご連絡ください。また、法令やアプリ仕様の変更に伴い、本ポリシーを予告なく改定する場合があります。
+                </p>
+              </div>
+
+              <p class="policy-meta">UPDATED: 2026-11 / MAHOROBA LAB</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer & Contact -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <div class="footer-contact">
+        <h2 class="footer-title">お問い合わせ・不具合報告</h2>
+        <p class="footer-desc">
+          ツールの不具合報告、機能のご要望、その他のお問い合わせは、公式X（旧Twitter）のダイレクトメッセージまたはリプライにて受け付けております。ご利用のアプリ名・配布元（BOOTH / Microsoft Store）・Windowsのバージョンをお知らせいただけるとスムーズです。
+        </p>
+        <div class="footer-actions">
+          <a href="https://x.com/mahorobalab" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            X（@mahorobalab）で問い合わせる
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© まほろばラボ（Mahoroba Lab）</p>
+        <div class="footer-links">
+          <a href="#apps">アプリ一覧</a>
+          <a href="#faq">よくある質問</a>
+          <a href="#privacy">プライバシーポリシー</a>
+          <a href="en/index.html" lang="en">English</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function openPrivacyIfTargeted() {
+        if (window.location.hash === '#privacy') {
+          var el = document.getElementById('privacy-details');
+          if (el) el.open = true;
+        }
+      }
+      openPrivacyIfTargeted();
+      window.addEventListener('hashchange', openPrivacyIfTargeted);
+    })();
+  </script>
+</body>
+</html>
