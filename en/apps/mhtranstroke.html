@@ -68,29 +68,133 @@
       <section class="doc-section">
         <h2>Overview</h2>
         <p>
-          MH-TranStroke is a lightweight Windows utility designed for streamers and tutorial creators that displays keyboard inputs and shortcut combinations on screen in real time.
+          MH-TranStroke is a lightweight Windows overlay utility designed for gaming livestreams, programming or 3D modeling streams, and tutorial videos. It displays which keys and shortcut combinations are being pressed on screen in real time.
         </p>
-        <div class="callout">
-          <strong>Documentation in Progress:</strong> Detailed UI options, configuration settings, and shortcut references will be added once the project repository is linked.
-        </div>
+        <p>
+          With full click-through support, the overlay never interrupts mouse clicks or drags in underlying games and applications. It also includes a Stealth Mode to instantly hide keystroke displays when entering passwords or sensitive information.
+        </p>
       </section>
 
       <section class="doc-section">
         <h2>Main Features</h2>
         <ul>
-          <li>Real-time display of keystrokes and modifier keys (Ctrl, Shift, Alt, etc.)</li>
-          <li>Clean overlay appearance suitable for livestreams and recorded tutorials</li>
-          <li>Lightweight, privacy-first design running strictly on your local device</li>
+          <li><strong>Full Click-Through:</strong> Continue playing games or working in apps right through the overlay without interruption.</li>
+          <li><strong>Fixed Key HUD &amp; Dynamic Strokes:</strong> Fixed HUD groups for Function keys (F1–F12), Modifiers, Space, and Arrow keys, plus dynamic pop-up display for characters, symbols, and merged shortcuts (such as <code>Ctrl + C</code>).</li>
+          <li><strong>Three Visual Styles:</strong> Choose from clean <strong>Simple</strong>, glowing <strong>Neon</strong>, or animated <strong>Gaming</strong> RGB modes (Sync, Wave, Reactive).</li>
+          <li><strong>Flexible Layout Customization:</strong> Drag any key group anywhere on screen and resize individually. Layouts are automatically saved per display and resolution.</li>
+          <li><strong>Multi-Monitor Simultaneous Display:</strong> Show keystrokes across multiple selected monitors at once, automatically adapting to cable changes or resolution updates.</li>
+          <li><strong>Privacy Protection (Stealth Mode):</strong> Quickly disable/dim keystroke display using <code>Shift + F12</code> or the system tray icon.</li>
+          <li><strong>Local-Only &amp; Multilingual:</strong> All keystroke processing stays strictly on your local device with no external data transmission. Supports Japanese and English.</li>
         </ul>
       </section>
 
       <section class="doc-section">
         <h2>Basic Usage</h2>
         <ol>
-          <li>Download and launch the app from BOOTH (Portable) or the Microsoft Store.</li>
-          <li>Position the keystroke overlay window where it is easy for viewers to see.</li>
-          <li>Capture the window in OBS Studio or your recording software using Window Capture.</li>
+          <li><strong>Launch:</strong> For the BOOTH Portable Edition, extract the ZIP archive and run <code>MHTranStroke.exe</code> (no installation required). For the Microsoft Store Edition, launch it from the Start menu after installing.</li>
+          <li><strong>Use Normally:</strong> The key HUD appears on screen. Because it is click-through, you can interact with games, browsers, or creative tools behind it as usual.</li>
+          <li><strong>Open Menu:</strong> <strong>Right-click</strong> the MH-TranStroke icon in the system tray (bottom-right of your taskbar) to open Settings, Size &amp; Position Edit Mode, or Exit. <strong>Left-click</strong> the tray icon to quickly toggle Stealth Mode.</li>
+          <li><strong>Streaming &amp; Recording (OBS Studio, etc.):</strong> MH-TranStroke renders directly as a desktop overlay. When using <strong>Display Capture</strong> in OBS Studio or similar software, the keystrokes are captured along with your screen. (If you use Game Capture or single-window Window Capture only, desktop overlays will not appear in that source.)</li>
         </ol>
+      </section>
+
+      <section class="doc-section">
+        <h2>Shortcuts &amp; Quick Actions</h2>
+        <p>
+          You can switch modes quickly during streams or recording using keyboard shortcuts or quick UI controls.
+        </p>
+        <table class="spec-table">
+          <tbody>
+            <tr>
+              <th>Toggle Stealth Mode</th>
+              <td>
+                <code>Shift + F12</code> (can be changed to double-press in Settings)<br>
+                Or left-click the system tray icon / double-left-click the top-right &ldquo;MH-TranStroke&rdquo; logo
+              </td>
+            </tr>
+            <tr>
+              <th>Toggle Size &amp; Position Edit Mode</th>
+              <td>
+                <code>Shift + F11</code> (can be changed to double-press in Settings)<br>
+                Or select &ldquo;📐 Size &amp; Position Adjustment Mode&rdquo; from the tray right-click menu
+              </td>
+            </tr>
+            <tr>
+              <th>Top-Right Logo Actions</th>
+              <td>
+                <strong>Left-drag:</strong> Move the logo badge<br>
+                <strong>Double-left-click:</strong> Toggle Stealth Mode<br>
+                <strong>Right-click:</strong> Open quick menu (Settings, Hide Logo, etc.)
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="callout">
+          <strong>About Stealth Mode:</strong> Switch to Stealth Mode before typing passwords or personal information. While active, keystrokes are hidden (dimmed out) and a stealth badge appears at the top of the screen. Double-click the badge or press <code>Shift + F12</code> again to resume normal display.
+        </div>
+      </section>
+
+      <section class="doc-section">
+        <h2>Settings Reference</h2>
+        <p>
+          Open &ldquo;⚙ Settings&rdquo; from the system tray right-click menu to customize everything with live preview. The buttons at the top-right of the Settings window let you switch Language (Auto / JA / EN) and UI Theme (Auto / Dark / Light).
+        </p>
+
+        <h3>Target Displays (Multi-Monitor Simultaneous)</h3>
+        <p>
+          Simultaneously displays keystrokes on all checked monitors. Use &ldquo;All Screens&rdquo; or &ldquo;Primary Only&rdquo; for quick selection. The overlay automatically adapts to monitor connection/disconnection, and layouts are saved separately per display, resolution, and DPI scale.
+        </p>
+
+        <h3>Stealth Mode Toggle &amp; Shortcut Options</h3>
+        <p>
+          If <code>Shift + F11</code> or <code>Shift + F12</code> conflicts with another game or application, enable &ldquo;<strong>Require double-press of function keys for shortcuts</strong>&rdquo; to prevent accidental triggers while keeping quick double-tap access.
+        </p>
+
+        <h3>Size &amp; Position Edit Mode</h3>
+        <p>
+          Enabling this mode temporarily turns off click-through so you can freely arrange the five key groups (Function Keys, Modifier Keys, Space Key, Arrow Keys, and Dynamic Strokes).
+        </p>
+        <ul>
+          <li><strong>Individual Move &amp; Resize:</strong> Drag any group frame to reposition it. Scroll the mouse wheel over a group or drag its bottom-right grip to resize individually (0.5x–3.0x).</li>
+          <li><strong>Global Scale Presets:</strong> Resize all groups together using the <code>0.8x</code>, <code>1.0x (Default)</code>, <code>1.25x</code>, <code>1.5x</code>, <code>1.75x</code>, and <code>2.0x</code> preset buttons.</li>
+          <li><strong>Reset Layout:</strong> Click &ldquo;🔄 Reset Size and Position to Default&rdquo; to restore the default layout for the current display.</li>
+        </ul>
+
+        <h3>Overall Opacity &amp; Quick Slider</h3>
+        <ul>
+          <li><strong>Opacity:</strong> Adjust overall overlay opacity from 20% to 100% (default: 85%).</li>
+          <li><strong>Show vertical opacity slider on screen right:</strong> Keeps a compact vertical bar on the right edge of the screen for quick opacity and global scale (<code>+/-</code> and <code>1.0x</code> reset) adjustments during a stream.</li>
+        </ul>
+
+        <h3>Visual Style &amp; Neon Color</h3>
+        <ul>
+          <li><strong>Simple:</strong> Clean monochrome translucent style suited for tutorials and calm work streams.</li>
+          <li><strong>Neon:</strong> Glowing neon-tube effect. Pick any color with the HEX color picker or choose from five presets (Cyber Cyan, Neon Magenta, Gaming Green, Sunset Orange, White).</li>
+          <li><strong>Gaming:</strong> 7-color RGB gradient animation with three modes: <strong>Sync (Cycle)</strong>, <strong>Wave (Flow)</strong>, and <strong>Reactive (Keypress)</strong>.</li>
+        </ul>
+
+        <h3>Frame Background</h3>
+        <p>
+          Choose the key HUD background from <strong>Dark Translucent</strong>, <strong>Transparent</strong>, or <strong>Custom Color</strong> (with alpha channel transparency control).
+        </p>
+
+        <h3>Modifier Keys Order</h3>
+        <p>
+          Customize the order of the bottom-left modifier keys (<code>Tab</code>, <code>Win</code>, <code>Ctrl</code>, <code>Shift</code>, <code>Alt</code>) to match your keyboard layout. Drag and drop the buttons, click <code>◀</code> / <code>▶</code>, or select a preset such as Programmer, Standard Full, Gaming, Windows Standard, or Without Tab.
+        </p>
+
+        <h3>Key Visibility</h3>
+        <p>
+          Toggle each overlay element individually on or off:
+        </p>
+        <ul>
+          <li>Show App Name Logo on Top Right</li>
+          <li>Show Function Keys (F1-F12)</li>
+          <li>Show Modifier Keys (Win, Ctrl, Shift, Alt)</li>
+          <li>Show Space Key</li>
+          <li>Show Arrow Keys (↑ ← ↓ →)</li>
+          <li>Show Dynamic Strokes (Characters &amp; Shortcuts)</li>
+        </ul>
       </section>
 
       <section class="doc-section">
@@ -99,15 +203,23 @@
           <tbody>
             <tr>
               <th>Supported OS</th>
-              <td>Windows 10 / Windows 11</td>
+              <td>Windows 10 / Windows 11 (64-bit)</td>
             </tr>
             <tr>
               <th>Distribution</th>
-              <td>BOOTH (Portable Edition) / Microsoft Store</td>
+              <td>BOOTH (Portable Edition, self-contained without extra runtime) / Microsoft Store</td>
+            </tr>
+            <tr>
+              <th>Settings File Location</th>
+              <td><code>%AppData%\MahorobaLab\MHTranStroke\settings.json</code></td>
             </tr>
             <tr>
               <th>Data Transmission</th>
-              <td>None (local-only processing; version checks read a public JSON file on GitHub)</td>
+              <td>None (local-only processing; BOOTH edition checks a public JSON file on GitHub for updates)</td>
+            </tr>
+            <tr>
+              <th>Commercial &amp; Streaming Use</th>
+              <td>Allowed for personal, commercial, and monetized streams/videos (no attribution required)</td>
             </tr>
           </tbody>
         </table>
@@ -116,7 +228,7 @@
       <section class="doc-section">
         <h2>Related Help &amp; Troubleshooting</h2>
         <p>
-          For SmartScreen warnings on the BOOTH edition, OBS Studio transparency capture setup, and uninstallation steps, please see the <a href="../index.html#faq">Common Help &amp; FAQ</a> section on the portal.
+          For SmartScreen warnings on the BOOTH edition, uninstallation steps, and general questions, please see the <a href="../index.html#faq">Common Help &amp; FAQ</a> section on the portal.
         </p>
       </section>
 

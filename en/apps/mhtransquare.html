@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MH-TranSquare Help &amp; User Guide | Mahoroba Lab</title>
-  <meta name="description" content="Official help and user guide for MH-TranSquare, a simple on-screen frame and region highlight utility.">
+  <meta name="description" content="Official help and user guide for MH-TranSquare, a click-through on-screen frame overlay tool for OBS streaming, recording, and presentations.">
   <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
@@ -68,29 +68,133 @@
       <section class="doc-section">
         <h2>Overview</h2>
         <p>
-          MH-TranSquare is a lightweight Windows utility that draws a clean, customizable frame around any area of your screen, making it easy to highlight key regions during livestreams, presentations, and screen sharing.
+          MH-TranSquare is a lightweight Windows overlay utility designed for livestreams, screen recordings, and presentations. It draws a clean, customizable frame on your screen so you can see at a glance which area is being captured by OBS Studio or highlight a specific region for your viewers.
         </p>
-        <div class="callout">
-          <strong>Documentation in Progress:</strong> Detailed UI options, configuration settings, and shortcut references will be added once the project repository is linked.
-        </div>
+        <p>
+          The interior of the frame is completely click-through, allowing you to interact with underlying games, browsers, and creative software without interference. It also integrates with OBS Studio via WebSocket to automatically sync crop values and reflect your streaming or recording status in the frame color.
+        </p>
       </section>
 
       <section class="doc-section">
         <h2>Main Features</h2>
         <ul>
-          <li>Simple, distraction-free frame overlay to highlight specific screen regions</li>
-          <li>Intuitive controls suited for live presentations and video tutorials</li>
-          <li>Lightweight, privacy-first design running strictly on your local device</li>
+          <li><strong>Full Click-Through Transparency:</strong> Mouse clicks and drags pass completely through the inside of the frame, keeping games and apps unobstructed.</li>
+          <li><strong>Accidental Drag Prevention (Move &amp; Resize Lock):</strong> Movement and resizing are locked by default so the frame never shifts accidentally during a broadcast.</li>
+          <li><strong>Alt-Key Grid Snapping:</strong> Hold <code>Alt</code> while moving or resizing to snap cleanly to configurable grid increments (10 / 20 / 50 / 100 px).</li>
+          <li><strong>Large Real-Time HUD:</strong> Displays live <code>X / Y</code> coordinates (from the display&rsquo;s top-left corner) and <code>Width × Height</code> dimensions at the center of the screen while dragging.</li>
+          <li><strong>Instant Screen Snapping &amp; Presets:</strong> Snap the frame to screen corners or center alignments in one click, save up to 4 custom position/size presets, or switch to standard OBS resolutions (FHD / HD / 1:1 / SD).</li>
+          <li><strong>Real-Time Hover Preview:</strong> Preview border thickness (2–8 px), opacity (10%–100%), and color (Red, Cyan, Lime, Yellow, White) live simply by hovering over menu items.</li>
+          <li><strong>OBS Studio WebSocket Integration:</strong> Import crop regions from OBS, auto-sync frame changes back to OBS Display Capture crop settings, and automatically change the frame color based on streaming/recording status.</li>
+          <li><strong>Local-Only &amp; Multilingual:</strong> All settings are stored locally with no external data transmission. Supports English and Japanese.</li>
         </ul>
       </section>
 
       <section class="doc-section">
         <h2>Basic Usage</h2>
         <ol>
-          <li>Download and launch the app from BOOTH (Portable) or the Microsoft Store.</li>
-          <li>Resize and position the highlight frame over the screen area you want to emphasize.</li>
-          <li>Use it during streams, recordings, or screen-sharing sessions to guide viewer attention.</li>
+          <li><strong>Launch:</strong> For the BOOTH Portable Edition, extract the ZIP archive and run <code>MHTranSquare.exe</code> (no installation required). For the Microsoft Store Edition, launch it from the Start menu after installing.</li>
+          <li><strong>Position &amp; Size the Frame:</strong> Click the <code>⚙</code> button at the bottom-right of the frame (or right-click the border) and uncheck &ldquo;Lock Movement&rdquo; and &ldquo;Lock Resize&rdquo;. Drag the border line to move the frame and drag the bottom-right grip to resize it.</li>
+          <li><strong>Lock to Prevent Mistakes:</strong> Once positioned, re-enable &ldquo;Lock Movement&rdquo; and &ldquo;Lock Resize&rdquo; from the menu so you don&rsquo;t accidentally move the frame during a stream.</li>
+          <li><strong>Open Menu &amp; Toggle Visibility:</strong> Open settings anytime via the bottom-right <code>⚙</code> button, by right-clicking the frame border, or by <strong>right-clicking</strong> the system tray icon. <strong>Left-click</strong> the system tray icon to quickly toggle the frame visible or hidden.</li>
+          <li><strong>Using with OBS Studio:</strong> Use the frame as a visual guide for OBS Display Capture cropping, or enable OBS WebSocket Integration to sync crop values automatically.</li>
         </ol>
+      </section>
+
+      <section class="doc-section">
+        <h2>Controls &amp; Quick Actions</h2>
+        <p>
+          Adjust the frame and toggle visibility quickly using mouse actions and the system tray icon.
+        </p>
+        <table class="spec-table">
+          <tbody>
+            <tr>
+              <th>Left-Drag on Frame Border</th>
+              <td>Move the frame freely (when Lock Movement is off)</td>
+            </tr>
+            <tr>
+              <th><code>Alt</code> + Left-Drag</th>
+              <td>Move or resize while snapping to the selected grid size (10 / 20 / 50 / 100 px)</td>
+            </tr>
+            <tr>
+              <th>Drag Bottom-Right Grip</th>
+              <td>Resize the frame (when Lock Resize is off; hold <code>Alt</code> to snap to grid)</td>
+            </tr>
+            <tr>
+              <th>Bottom-Right <code>⚙</code> Button / Right-Click Border</th>
+              <td>Open the settings menu (<code>⚙</code> button supports both left-click and right-click)</td>
+            </tr>
+            <tr>
+              <th>Left-Click System Tray Icon</th>
+              <td>Toggle frame visibility (Show / Hide)</td>
+            </tr>
+            <tr>
+              <th>Right-Click System Tray Icon</th>
+              <td>Open the settings menu</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="callout">
+          <strong>About Move &amp; Resize Locks:</strong> Both &ldquo;Lock Movement&rdquo; and &ldquo;Lock Resize&rdquo; are enabled by default to prevent accidental drags. Uncheck them in the menu when you want to drag or resize the frame (the bottom-right grip appears dimmed while locked). Note that &ldquo;Frame Position&rdquo; snapping and &ldquo;Presets&rdquo; still work from the menu even while locked.
+        </div>
+      </section>
+
+      <section class="doc-section">
+        <h2>Menu &amp; Settings Reference</h2>
+        <p>
+          Customize all options from the settings menu (bottom-right <code>⚙</code> button, right-clicking the border, or right-clicking the tray icon). Settings are saved automatically.
+        </p>
+
+        <h3>Locks &amp; Visibility</h3>
+        <ul>
+          <li><strong>Lock Movement / Lock Resize:</strong> Prevents accidental dragging or resizing of the frame.</li>
+          <li><strong>Always on Top:</strong> Keeps the frame above other windows.</li>
+          <li><strong>Show in Taskbar:</strong> Toggles the taskbar button on or off (you can always access the app from the system tray).</li>
+          <li><strong>Hide Frame / Show Frame:</strong> Toggles the frame overlay visibility.</li>
+        </ul>
+
+        <h3>Frame Position (Instant Snapping)</h3>
+        <p>
+          Move the frame in one click to a corner (Top-Left, Top-Right, Bottom-Left, Bottom-Right) or center alignment (Screen Center, Top Center, Bottom Center, Left Center, Right Center) of the monitor where the frame is currently located.
+        </p>
+
+        <h3>Presets &amp; Preset Resolutions</h3>
+        <ul>
+          <li><strong>User Presets (1–4):</strong> Save up to 4 custom position and size combinations for quick switching between games or scenes. Use &ldquo;Clear All Presets...&rdquo; to remove saved slots.</li>
+          <li><strong>Preset Resolutions (for OBS):</strong> Resize immediately to <code>1920 × 1080 (FHD 16:9)</code>, <code>1280 × 720 (HD 16:9)</code>, <code>1080 × 1080 (1:1 Square)</code>, or <code>854 × 480 (SD 16:9)</code>.</li>
+        </ul>
+
+        <h3>Alt Snap Grid Size</h3>
+        <p>
+          Choose the grid snap increment used when holding <code>Alt</code> while moving or resizing: <code>10 px</code>, <code>20 px (Default)</code>, <code>50 px</code>, or <code>100 px</code>.
+        </p>
+
+        <h3>Border Thickness, Opacity &amp; Color (Hover Preview)</h3>
+        <ul>
+          <li><strong>Border Thickness:</strong> Choose from <code>2 px</code>, <code>4 px</code>, <code>6 px</code>, or <code>8 px</code>.</li>
+          <li><strong>Border Opacity:</strong> Adjust from <code>100% (Default)</code> down to <code>10%</code> in 10% steps.</li>
+          <li><strong>Border Color:</strong> Choose from <code>Red</code>, <code>Cyan</code>, <code>Lime</code>, <code>Yellow</code>, or <code>White</code>.</li>
+        </ul>
+        <p>
+          Hovering over any of these menu items previews the style live on screen; click to confirm your selection.
+        </p>
+
+        <h3>OBS Studio Integration (WebSocket)</h3>
+        <p>
+          Enable OBS WebSocket in OBS Studio (Tools &gt; WebSocket Server Settings) and open &ldquo;OBS Integration Settings...&rdquo; to connect MH-TranSquare with OBS:
+        </p>
+        <ul>
+          <li><strong>Connection:</strong> Configure Host (default: <code>127.0.0.1</code>), Port (default: <code>4455</code>), and Password (if set), then click &ldquo;Test Connection&rdquo;.</li>
+          <li><strong>Auto-sync frame color on Stream / Record:</strong> Automatically changes the frame color based on OBS status (<strong>Lime</strong> while streaming, <strong>Red</strong> while recording, <strong>Purple</strong> when both are active, and your normal color when idle).</li>
+          <li><strong>Auto-sync frame size/position to OBS crop:</strong> Moving or resizing the frame automatically updates the crop values of the matching OBS Display Capture source in real time.</li>
+          <li><strong>Import Crop from OBS:</strong> When connected, click &ldquo;Import Crop from OBS&rdquo; in the menu to snap the frame precisely to your current OBS crop region.</li>
+        </ul>
+
+        <h3>Language, Reset &amp; Other</h3>
+        <ul>
+          <li><strong>Language:</strong> Switch between <code>日本語</code> and <code>English</code> at any time (auto-detected from OS language on first launch).</li>
+          <li><strong>Reset Settings...:</strong> Restores position, size, and style settings to defaults.</li>
+          <li><strong>About MH-TranSquare... / Help:</strong> View version and license details or open this official help page.</li>
+        </ul>
       </section>
 
       <section class="doc-section">
@@ -99,15 +203,23 @@
           <tbody>
             <tr>
               <th>Supported OS</th>
-              <td>Windows 10 / Windows 11</td>
+              <td>Windows 10 / Windows 11 (64-bit)</td>
             </tr>
             <tr>
               <th>Distribution</th>
-              <td>BOOTH (Portable Edition) / Microsoft Store</td>
+              <td>BOOTH (Portable Edition, self-contained without extra runtime) / Microsoft Store</td>
+            </tr>
+            <tr>
+              <th>Settings File Location</th>
+              <td><code>%AppData%\MahorobaLab\MHTranSquare\settings.json</code></td>
             </tr>
             <tr>
               <th>Data Transmission</th>
-              <td>None (local-only processing; version checks read a public JSON file on GitHub)</td>
+              <td>None (local-only processing; BOOTH edition checks a public JSON file on GitHub for updates; OBS integration uses local WebSocket communication)</td>
+            </tr>
+            <tr>
+              <th>Commercial &amp; Streaming Use</th>
+              <td>Allowed for personal, commercial, and monetized streams/videos (no attribution required)</td>
             </tr>
           </tbody>
         </table>

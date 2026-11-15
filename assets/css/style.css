@@ -356,6 +356,12 @@ code {
   white-space: nowrap;
 }
 
+.app-price-tag.is-soon {
+  color: var(--accent);
+  background-color: var(--accent-soft);
+  border-color: var(--accent-border);
+}
+
 .app-title-row {
   display: flex;
   align-items: center;
@@ -472,6 +478,14 @@ code {
 .btn-secondary:hover {
   background-color: var(--bg-page);
   border-color: var(--text-muted);
+}
+
+.btn-disabled {
+  background-color: var(--bg-subtle);
+  color: var(--text-muted);
+  border-color: var(--border);
+  cursor: default;
+  pointer-events: none;
 }
 
 .card-help-link {
