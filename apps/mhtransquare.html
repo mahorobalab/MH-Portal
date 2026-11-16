@@ -1,261 +1,463 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MH-TranSquare ヘルプ・使い方 | まほろばラボ</title>
-  <meta name="description" content="MH-TranSquareの公式ヘルプ・使い方ページ。OBS配信・画面録画・プレゼン向けに指定領域を枠表示できるクリックスルー対応オーバーレイツールです。">
-  <link rel="stylesheet" href="../assets/css/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="../index.html" class="brand-link">
-        <svg class="brand-mark-svg" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <rect x="2" y="2" width="28" height="28" rx="8" fill="#0F766E"/>
-          <path d="M9 22V11L16 17L23 11V22" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="16" cy="9.5" r="1.5" fill="#99F6E4"/>
-        </svg>
-        <span>まほろばラボ</span>
-      </a>
-      <div class="header-right">
-        <nav class="site-nav" aria-label="メインナビゲーション">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MH-TranSquare ヘルプ・使い方 | まほろばラボ</title>
+    <meta
+      name="description"
+      content="MH-TranSquareの公式ヘルプ・使い方ページ。OBS配信・画面録画・プレゼン向けに配信領域を枠表示できるクリックスルー対応オーバーレイツールです。"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="brand-link">
+          <svg
+            class="brand-mark-svg"
+            viewBox="0 0 32 32"
+            fill="none"
+            aria-hidden="true"
+          >
+            <rect x="2" y="2" width="28" height="28" rx="8" fill="#0F766E" />
+            <path
+              d="M9 22V11L16 17L23 11V22"
+              stroke="#FFFFFF"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle cx="16" cy="9.5" r="1.5" fill="#99F6E4" />
+          </svg>
+          <span>まほろばラボ</span>
+        </a>
+        <div class="header-right">
+          <nav class="site-nav" aria-label="メインナビゲーション">
+            <a href="../index.html#apps">アプリ一覧</a>
+            <a href="../index.html#faq">よくある質問</a>
+            <a href="../index.html#privacy">プライバシーポリシー</a>
+            <a href="../index.html#contact">お問い合わせ</a>
+          </nav>
+          <div class="lang-switch" aria-label="言語切替">
+            <span class="lang-active" aria-current="page">日本語</span>
+            <a href="../en/apps/mhtransquare.html" lang="en">English</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="doc-main">
+      <div class="doc-container">
+        <nav class="breadcrumb" aria-label="パンくずリスト">
+          <a href="../index.html">ポータル</a>
+          <span aria-hidden="true">/</span>
           <a href="../index.html#apps">アプリ一覧</a>
-          <a href="../index.html#faq">よくある質問</a>
-          <a href="../index.html#privacy">プライバシーポリシー</a>
-          <a href="../index.html#contact">お問い合わせ</a>
+          <span aria-hidden="true">/</span>
+          <span>MH-TranSquare</span>
         </nav>
-        <div class="lang-switch" aria-label="言語切替">
-          <span class="lang-active" aria-current="page">日本語</span>
-          <a href="../en/apps/mhtransquare.html" lang="en">English</a>
+
+        <header class="doc-header">
+          <span class="doc-label">Windows ユーティリティ / ヘルプ</span>
+          <div class="doc-title-row">
+            <span class="app-icon-box" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect
+                  x="4"
+                  y="4"
+                  width="16"
+                  height="16"
+                  rx="2"
+                  stroke-dasharray="3 2.5"
+                />
+                <path d="M4 8V4h4M16 4h4v4M4 16v4h4M16 20h4v-4" />
+              </svg>
+            </span>
+            <h1 class="doc-title">MH-TranSquare</h1>
+          </div>
+          <p class="doc-subtitle">
+            画面上の配信領域をシンプルに枠表示・強調できるツール
+          </p>
+          <div class="doc-download-bar">
+            <a
+              href="https://mahorobalab.booth.pm/items/9150044"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+              >BOOTHで見る（ポータブル版）</a
+            >
+            <a
+              href="https://apps.microsoft.com/detail/9MWCC31HVM4F"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+              >Microsoft Storeで見る</a
+            >
+          </div>
+        </header>
+
+        <div class="screenshot-frame">
+          <img
+            src="../assets/images/mhtransquare.png"
+            alt="MH-TranSquare スクリーンショット"
+            loading="lazy"
+          />
+        </div>
+
+        <section class="doc-section">
+          <h2>概要</h2>
+          <p>
+            MH-TranSquare
+            は、ゲーム配信や作業配信、画面録画、プレゼンテーションにおいて、「画面上のどこが
+            OBS Studio
+            等で配信・録画されているか」や「視聴者に注目してほしい領域」をシンプルな枠線で表示できる軽量Windowsオーバーレイツールです。
+          </p>
+          <p>
+            枠の内側は完全なクリックスルー（マウス透過）に対応しているため、背後のゲームやブラウザ、制作アプリの操作を一切妨げません。さらに、OBS
+            Studio（WebSocket）と連携してクロップ範囲を自動同期したり、配信中・録画中のステータスに応じて枠の色を自動変化させたりすることも可能です。
+          </p>
+        </section>
+
+        <section class="doc-section">
+          <h2>主な機能</h2>
+          <ul>
+            <li>
+              <strong>完全クリックスルー（枠内すり抜け操作）：</strong
+              >枠の内側はマウス操作が背後に透過するため、配信中もゲームや作業をそのまま操作できます。
+            </li>
+            <li>
+              <strong>誤操作防止（移動・サイズロック）：</strong
+              >起動時は移動とサイズ変更がロックされており、配信中のうっかりドラッグによる枠ズレを防ぎます。
+            </li>
+            <li>
+              <strong>Altキーによるグリッド吸着：</strong><code>Alt</code>
+              キーを押しながら移動・リサイズすると、指定間隔（10 / 20 / 50 / 100
+              px）で綺麗にスナップします。
+            </li>
+            <li>
+              <strong>大型HUDリアルタイム表示：</strong
+              >移動・リサイズ中にディスプレイ左上からの座標（<code>X / Y</code
+              >）とサイズ（<code>幅 × 高さ</code
+              >）を画面中央に大きく表示します。
+            </li>
+            <li>
+              <strong>一括スナップ配置 ＆ プリセット：</strong
+              >画面の角・中央へのワンクリック配置や、4つのユーザープリセット保存、OBS向け既定解像度（FHD
+              / HD / 1:1 / SD）への切り替えに対応しています。
+            </li>
+            <li>
+              <strong>リアルタイムホバープレビュー：</strong
+              >枠の太さ（2〜8px）・不透明度（10%〜100%）・色（赤 / 青 / 緑 / 黄
+              / 白）をメニューにマウスを乗せるだけで即座にプレビューできます。
+            </li>
+            <li>
+              <strong>OBS Studio WebSocket 連携：</strong
+              >OBSの画面キャプチャのクロップ値を枠へ読み込んだり、枠の移動・リサイズをOBSへ自動同期したりできます。配信・録画状態に応じた枠色の自動変化にも対応しています。
+            </li>
+            <li>
+              <strong>ローカル完結 ＆ 多言語対応：</strong
+              >設定はすべてローカル端末に保存され外部送信は行いません。日本語 /
+              English の切り替えに対応しています。
+            </li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>基本的な使い方</h2>
+          <ol>
+            <li>
+              <strong>起動する：</strong>BOOTH（ポータブル版）はZIPを展開して
+              <code>MHTranSquare.exe</code>
+              を実行します（インストール不要）。Microsoft
+              Store版はインストール後にスタートメニュー等から起動します。
+            </li>
+            <li>
+              <strong>枠の位置とサイズを合わせる：</strong>枠右下の
+              <code>⚙</code>
+              ボタン（または枠線上で右クリック）からメニューを開き、「移動をロック」「サイズ変更をロック」のチェックを外します。枠線上をドラッグして移動し、右下の四角いグリップをドラッグしてサイズを調整します。
+            </li>
+            <li>
+              <strong>誤操作を防ぐためロックする：</strong
+              >位置とサイズが決まったら、メニューから「移動をロック」「サイズ変更をロック」をオンに戻しておくと、配信中に誤って動かしてしまう心配がありません。
+            </li>
+            <li>
+              <strong>メニューを開く・枠を隠す：</strong>設定変更は枠右下の
+              <code>⚙</code>
+              ボタン、枠線の右クリック、または画面右下（タスクトレイ）アイコンの<strong>右クリック</strong>から行えます。タスクトレイアイコンを<strong>左クリック</strong>すると、枠の表示／非表示を素早く切り替えられます。
+            </li>
+            <li>
+              <strong>OBS Studio 等での活用：</strong
+              >OBSの「画面キャプチャ」のクロップ（切り抜き）範囲の目安として使えるほか、OBS連携を有効にすれば枠の動きに合わせてOBS側のクロップ数値を自動更新できます。
+            </li>
+          </ol>
+        </section>
+
+        <section class="doc-section">
+          <h2>操作方法 ＆ クイック操作</h2>
+          <p>
+            マウス操作とタスクトレイから、枠の調整や表示切り替えを直感的に行えます。
+          </p>
+          <table class="spec-table">
+            <tbody>
+              <tr>
+                <th>枠線上を左ドラッグ</th>
+                <td>枠を自由に移動（移動ロック解除時）</td>
+              </tr>
+              <tr>
+                <th><code>Alt</code> + 左ドラッグ</th>
+                <td>
+                  指定したグリッドサイズ（10 / 20 / 50 / 100
+                  px）に吸着しながら移動・リサイズ
+                </td>
+              </tr>
+              <tr>
+                <th>右下の四角グリップをドラッグ</th>
+                <td>
+                  枠のサイズを変更（サイズロック解除時。<code>Alt</code>
+                  キー併用でグリッド吸着）
+                </td>
+              </tr>
+              <tr>
+                <th>右下の <code>⚙</code> ボタン / 枠線右クリック</th>
+                <td>
+                  設定メニューを表示（<code>⚙</code>
+                  ボタンは左クリック・右クリック両対応）
+                </td>
+              </tr>
+              <tr>
+                <th>タスクトレイアイコン左クリック</th>
+                <td>枠の表示 / 非表示をトグル切り替え</td>
+              </tr>
+              <tr>
+                <th>タスクトレイアイコン右クリック</th>
+                <td>設定メニューを表示</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="callout">
+            <strong>移動・サイズロックについて：</strong
+            >初期状態では誤操作を防ぐため、移動とサイズ変更がどちらもロックされています。枠をドラッグで動かしたいときは、メニューの「移動をロック」「サイズ変更をロック」のチェックを外してください（ロック中は右下のグリップが半透明表示になります）。なお、ロック中でもメニューからの「枠位置」スナップや「プリセット」適用は行えます。
+          </div>
+        </section>
+
+        <section class="doc-section">
+          <h2>メニュー・設定項目の詳細</h2>
+          <p>
+            設定メニュー（枠右下の
+            <code>⚙</code>
+            ボタン、枠線右クリック、またはタスクトレイ右クリック）から以下の項目をカスタマイズできます。設定は終了時および変更時に自動で保存されます。
+          </p>
+
+          <h3>ロック ＆ 表示制御</h3>
+          <ul>
+            <li>
+              <strong>移動をロック / サイズ変更をロック：</strong
+              >枠のドラッグ移動やグリップによるリサイズを禁止して誤操作を防ぎます。
+            </li>
+            <li>
+              <strong>常に最前面：</strong
+              >他のウィンドウの上に枠を常に表示します。
+            </li>
+            <li>
+              <strong>タスクバーに表示：</strong
+              >タスクバーへのアプリアイコン表示をオン／オフします（オフにしてもタスクトレイから操作できます）。
+            </li>
+            <li>
+              <strong>枠を隠す (非表示) / 枠を表示する：</strong
+              >枠の表示状態を切り替えます。
+            </li>
+          </ul>
+
+          <h3>枠位置（一括スナップ配置）</h3>
+          <p>
+            現在のディスプレイの「角（左上 / 右上 / 左下 /
+            右下）」や「中央（画面中央 / 上・左右中央 / 下・左右中央 /
+            左・上下中央 /
+            右・上下中央）」へワンクリックで枠を移動します。マルチモニター環境では、現在枠があるモニターを基準に配置されます。
+          </p>
+
+          <h3>プリセット ＆ 既定の解像度</h3>
+          <ul>
+            <li>
+              <strong>ユーザープリセット（1〜4）：</strong
+              >現在の枠の位置とサイズを最大4つまで保存し、ゲームや配信シーンに合わせてワンクリックで呼び出せます。「プリセットをすべてクリア...」で一括削除も可能です。
+            </li>
+            <li>
+              <strong>既定の解像度 (OBS用)：</strong
+              ><code>1920 × 1080 (FHD 16:9)</code>、<code
+                >1280 × 720 (HD 16:9)</code
+              >、<code>1080 × 1080 (1:1 正方形)</code>、<code
+                >854 × 480 (SD 16:9)</code
+              >
+              にサイズを一発変更できます。
+            </li>
+          </ul>
+
+          <h3>Alt吸着グリッドサイズ</h3>
+          <p>
+            <code>Alt</code>
+            キーを押しながら移動・リサイズする際のスナップ間隔を
+            <code>10 px</code> / <code>20 px (標準)</code> /
+            <code>50 px</code> / <code>100 px</code> から選択できます。
+          </p>
+
+          <h3>枠の太さ・不透明度・色（ホバープレビュー対応）</h3>
+          <ul>
+            <li>
+              <strong>枠の太さ：</strong><code>2 px</code> / <code>4 px</code> /
+              <code>6 px</code> / <code>8 px</code> から選択できます。
+            </li>
+            <li>
+              <strong>枠線の不透明度：</strong><code>100% (標準)</code> 〜
+              <code>10%</code> の10段階で調整できます。
+            </li>
+            <li>
+              <strong>枠の色：</strong><code>赤 (Red)</code> /
+              <code>青 (Cyan)</code> / <code>緑 (Lime)</code> /
+              <code>黄 (Yellow)</code> /
+              <code>白 (White)</code> から選択できます。
+            </li>
+          </ul>
+          <p>
+            これらの項目はメニューにマウスカーソルを合わせるだけでリアルタイムにプレビューされ、クリックすると確定します。
+          </p>
+
+          <h3>OBS Studio 連携（WebSocket）</h3>
+          <p>
+            OBS Studio の「ツール ＞
+            WebSocketサーバー設定」を有効にすることで、MH-TranSquare
+            とOBSをリアルタイムに連携できます。「OBS
+            連携設定...」から以下の設定を行えます。
+          </p>
+          <ul>
+            <li>
+              <strong>接続設定：</strong
+              >ホスト（初期値：<code>127.0.0.1</code>）、ポート番号（初期値：<code>4455</code>）、パスワードを設定し、「接続テスト」で疎通確認できます。
+            </li>
+            <li>
+              <strong>配信中・録画中に枠の色を自動連動する：</strong
+              >OBSの状態に応じて枠の色が自動変化します（配信中：<strong>緑</strong>、録画中：<strong>赤</strong>、配信と録画の両方：<strong>紫</strong>、待機中：設定した通常色）。
+            </li>
+            <li>
+              <strong
+                >枠の位置・サイズ変更をOBSのクロップに自動同期する：</strong
+              >MH-TranSquare
+              の枠を動かしたりサイズ変更したりすると、OBS側の該当ソースのクロップ（切り抜き）数値がリアルタイムに更新されます。
+            </li>
+            <li>
+              <strong>OBS からクロップを読み込む：</strong
+              >OBS接続時にメニューの「OBS
+              からクロップを読み込む」を押すと、OBS側で現在設定されているクロップ位置・サイズに合わせて枠をぴったり吸着させます。
+            </li>
+          </ul>
+          <p>
+            <strong>マルチモニター環境でのご注意：</strong
+            >クロップ位置は「現在枠があるモニターの左上」を基準に計算されます。OBS連携を使う場合は、<strong>OBSの「画面キャプチャ」ソースで映しているモニター内に枠を置いて</strong>ご利用ください（モニター境界をまたぐとはみ出た分が切り落とされ、別のモニターへ枠を完全に移すとそのモニター基準の座標でOBS側の映像が切り抜かれます）。なお、同期対象は現在のシーン内の
+            <code>Transquare</code> または <code>画面キャプチャ</code> /
+            <code>Display Capture</code> を含むソースが優先されます。
+          </p>
+
+          <h3>言語・設定のリセット・その他</h3>
+          <ul>
+            <li>
+              <strong>言語 (Language)：</strong><code>日本語</code> /
+              <code>English</code>
+              をいつでも切り替えられます（初回起動時はOS言語を自動判定）。
+            </li>
+            <li>
+              <strong>設定をリセット...：</strong
+              >位置・サイズ・表示スタイルを初期状態に戻します。
+            </li>
+            <li>
+              <strong>MH-TranSquare について... / ヘルプ：</strong
+              >バージョン情報・ライセンス確認や公式ヘルプページを開けます。
+            </li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>主な仕様・動作環境</h2>
+          <table class="spec-table">
+            <tbody>
+              <tr>
+                <th>対応OS</th>
+                <td>Windows 10 / Windows 11 (64bit)</td>
+              </tr>
+              <tr>
+                <th>配布形態</th>
+                <td>
+                  BOOTH（ポータブル版・ランタイム不要の自己完結型） / Microsoft
+                  Store
+                </td>
+              </tr>
+              <tr>
+                <th>設定ファイルの保存先</th>
+                <td>
+                  <code>%AppData%\MahorobaLab\MHTranSquare\settings.json</code>
+                </td>
+              </tr>
+              <tr>
+                <th>データ送信</th>
+                <td>
+                  なし（すべてローカル処理。BOOTH版のみ起動時にGitHub公開JSONで更新確認を実施。OBS連携はローカルのWebSocket通信を使用）
+                </td>
+              </tr>
+              <tr>
+                <th>商用・配信利用</th>
+                <td>
+                  個人利用・商用利用・収益化配信での利用可能（クレジット表記不要）
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="doc-section">
+          <h2>関連ヘルプ・トラブルシューティング</h2>
+          <p>
+            SmartScreenの警告が出た場合や、OBS
+            Studioでの透過・キャプチャ設定、アンインストール手順については、ポータルの<a
+              href="../index.html#faq"
+              >共通ヘルプ・よくある質問（FAQ）</a
+            >をご参照ください。
+          </p>
+        </section>
+
+        <nav class="doc-nav-footer" aria-label="ドキュメント移動">
+          <a href="../index.html#apps" class="btn btn-secondary"
+            >← アプリ一覧へ戻る</a
+          >
+          <div class="footer-links">
+            <a href="mhtranstroke.html">MH-TranStroke ヘルプ</a>
+            <a href="mhtranscreen.html">MH-TranScreen ヘルプ</a>
+          </div>
+        </nav>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom" style="padding-top: 0">
+          <p>© まほろばラボ（Mahoroba Lab）</p>
+          <div class="footer-links">
+            <a href="../index.html">ポータルトップ</a>
+            <a href="../index.html#privacy">プライバシーポリシー</a>
+            <a
+              href="https://x.com/mahorobalab"
+              target="_blank"
+              rel="noopener noreferrer"
+              >X（@mahorobalab）</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-
-  <main class="doc-main">
-    <div class="doc-container">
-      <nav class="breadcrumb" aria-label="パンくずリスト">
-        <a href="../index.html">ポータル</a>
-        <span aria-hidden="true">/</span>
-        <a href="../index.html#apps">アプリ一覧</a>
-        <span aria-hidden="true">/</span>
-        <span>MH-TranSquare</span>
-      </nav>
-
-      <header class="doc-header">
-        <span class="doc-label">Windows ユーティリティ / ヘルプ</span>
-        <div class="doc-title-row">
-          <span class="app-icon-box" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="4" y="4" width="16" height="16" rx="2" stroke-dasharray="3 2.5"/>
-              <path d="M4 8V4h4M16 4h4v4M4 16v4h4M16 20h4v-4"/>
-            </svg>
-          </span>
-          <h1 class="doc-title">MH-TranSquare</h1>
-        </div>
-        <p class="doc-subtitle">画面上の指定領域をシンプルに枠表示・強調できるツール</p>
-        <div class="doc-download-bar">
-          <a href="https://mahorobalab.booth.pm/items/9150044" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOTHで見る（ポータブル版）</a>
-          <a href="https://apps.microsoft.com/detail/9MWCC31HVM4F" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Microsoft Storeで見る</a>
-        </div>
-      </header>
-
-      <div class="screenshot-frame">
-        <img src="../assets/images/mhtransquare.png" alt="MH-TranSquare スクリーンショット" loading="lazy">
-      </div>
-
-      <section class="doc-section">
-        <h2>概要</h2>
-        <p>
-          MH-TranSquare は、ゲーム配信や作業配信、画面録画、プレゼンテーションにおいて、「画面上のどこが OBS Studio 等で配信・録画されているか」や「視聴者に注目してほしい領域」をシンプルな枠線で表示できる軽量Windowsオーバーレイツールです。
-        </p>
-        <p>
-          枠の内側は完全なクリックスルー（マウス透過）に対応しているため、背後のゲームやブラウザ、制作アプリの操作を一切妨げません。さらに、OBS Studio（WebSocket）と連携してクロップ範囲を自動同期したり、配信中・録画中のステータスに応じて枠の色を自動変化させたりすることも可能です。
-        </p>
-      </section>
-
-      <section class="doc-section">
-        <h2>主な機能</h2>
-        <ul>
-          <li><strong>完全クリックスルー（枠内すり抜け操作）：</strong>枠の内側はマウス操作が背後に透過するため、配信中もゲームや作業をそのまま操作できます。</li>
-          <li><strong>誤操作防止（移動・サイズロック）：</strong>起動時は移動とサイズ変更がロックされており、配信中のうっかりドラッグによる枠ズレを防ぎます。</li>
-          <li><strong>Altキーによるグリッド吸着：</strong><code>Alt</code> キーを押しながら移動・リサイズすると、指定間隔（10 / 20 / 50 / 100 px）で綺麗にスナップします。</li>
-          <li><strong>大型HUDリアルタイム表示：</strong>移動・リサイズ中にディスプレイ左上からの座標（<code>X / Y</code>）とサイズ（<code>幅 × 高さ</code>）を画面中央に大きく表示します。</li>
-          <li><strong>一括スナップ配置 ＆ プリセット：</strong>画面の角・中央へのワンクリック配置や、4つのユーザープリセット保存、OBS向け既定解像度（FHD / HD / 1:1 / SD）への切り替えに対応しています。</li>
-          <li><strong>リアルタイムホバープレビュー：</strong>枠の太さ（2〜8px）・不透明度（10%〜100%）・色（赤 / 青 / 緑 / 黄 / 白）をメニューにマウスを乗せるだけで即座にプレビューできます。</li>
-          <li><strong>OBS Studio WebSocket 連携：</strong>OBSの画面キャプチャのクロップ値を枠へ読み込んだり、枠の移動・リサイズをOBSへ自動同期したりできます。配信・録画状態に応じた枠色の自動変化にも対応しています。</li>
-          <li><strong>ローカル完結 ＆ 多言語対応：</strong>設定はすべてローカル端末に保存され外部送信は行いません。日本語 / English の切り替えに対応しています。</li>
-        </ul>
-      </section>
-
-      <section class="doc-section">
-        <h2>基本的な使い方</h2>
-        <ol>
-          <li><strong>起動する：</strong>BOOTH（ポータブル版）はZIPを展開して <code>MHTranSquare.exe</code> を実行します（インストール不要）。Microsoft Store版はインストール後にスタートメニュー等から起動します。</li>
-          <li><strong>枠の位置とサイズを合わせる：</strong>枠右下の <code>⚙</code> ボタン（または枠線上で右クリック）からメニューを開き、「移動をロック」「サイズ変更をロック」のチェックを外します。枠線上をドラッグして移動し、右下の四角いグリップをドラッグしてサイズを調整します。</li>
-          <li><strong>誤操作を防ぐためロックする：</strong>位置とサイズが決まったら、メニューから「移動をロック」「サイズ変更をロック」をオンに戻しておくと、配信中に誤って動かしてしまう心配がありません。</li>
-          <li><strong>メニューを開く・枠を隠す：</strong>設定変更は枠右下の <code>⚙</code> ボタン、枠線の右クリック、または画面右下（タスクトレイ）アイコンの<strong>右クリック</strong>から行えます。タスクトレイアイコンを<strong>左クリック</strong>すると、枠の表示／非表示を素早く切り替えられます。</li>
-          <li><strong>OBS Studio 等での活用：</strong>OBSの「画面キャプチャ」のクロップ（切り抜き）範囲の目安として使えるほか、OBS連携を有効にすれば枠の動きに合わせてOBS側のクロップ数値を自動更新できます。</li>
-        </ol>
-      </section>
-
-      <section class="doc-section">
-        <h2>操作方法 ＆ クイック操作</h2>
-        <p>
-          マウス操作とタスクトレイから、枠の調整や表示切り替えを直感的に行えます。
-        </p>
-        <table class="spec-table">
-          <tbody>
-            <tr>
-              <th>枠線上を左ドラッグ</th>
-              <td>枠を自由に移動（移動ロック解除時）</td>
-            </tr>
-            <tr>
-              <th><code>Alt</code> + 左ドラッグ</th>
-              <td>指定したグリッドサイズ（10 / 20 / 50 / 100 px）に吸着しながら移動・リサイズ</td>
-            </tr>
-            <tr>
-              <th>右下の四角グリップをドラッグ</th>
-              <td>枠のサイズを変更（サイズロック解除時。<code>Alt</code> キー併用でグリッド吸着）</td>
-            </tr>
-            <tr>
-              <th>右下の <code>⚙</code> ボタン / 枠線右クリック</th>
-              <td>設定メニューを表示（<code>⚙</code> ボタンは左クリック・右クリック両対応）</td>
-            </tr>
-            <tr>
-              <th>タスクトレイアイコン左クリック</th>
-              <td>枠の表示 / 非表示をトグル切り替え</td>
-            </tr>
-            <tr>
-              <th>タスクトレイアイコン右クリック</th>
-              <td>設定メニューを表示</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="callout">
-          <strong>移動・サイズロックについて：</strong>初期状態では誤操作を防ぐため、移動とサイズ変更がどちらもロックされています。枠をドラッグで動かしたいときは、メニューの「移動をロック」「サイズ変更をロック」のチェックを外してください（ロック中は右下のグリップが半透明表示になります）。なお、ロック中でもメニューからの「枠位置」スナップや「プリセット」適用は行えます。
-        </div>
-      </section>
-
-      <section class="doc-section">
-        <h2>メニュー・設定項目の詳細</h2>
-        <p>
-          設定メニュー（枠右下の <code>⚙</code> ボタン、枠線右クリック、またはタスクトレイ右クリック）から以下の項目をカスタマイズできます。設定は終了時および変更時に自動で保存されます。
-        </p>
-
-        <h3>ロック ＆ 表示制御</h3>
-        <ul>
-          <li><strong>移動をロック / サイズ変更をロック：</strong>枠のドラッグ移動やグリップによるリサイズを禁止して誤操作を防ぎます。</li>
-          <li><strong>常に最前面：</strong>他のウィンドウの上に枠を常に表示します。</li>
-          <li><strong>タスクバーに表示：</strong>タスクバーへのアプリアイコン表示をオン／オフします（オフにしてもタスクトレイから操作できます）。</li>
-          <li><strong>枠を隠す (非表示) / 枠を表示する：</strong>枠の表示状態を切り替えます。</li>
-        </ul>
-
-        <h3>枠位置（一括スナップ配置）</h3>
-        <p>
-          現在のディスプレイの「角（左上 / 右上 / 左下 / 右下）」や「中央（画面中央 / 上・左右中央 / 下・左右中央 / 左・上下中央 / 右・上下中央）」へワンクリックで枠を移動します。マルチモニター環境では、現在枠があるモニターを基準に配置されます。
-        </p>
-
-        <h3>プリセット ＆ 既定の解像度</h3>
-        <ul>
-          <li><strong>ユーザープリセット（1〜4）：</strong>現在の枠の位置とサイズを最大4つまで保存し、ゲームや配信シーンに合わせてワンクリックで呼び出せます。「プリセットをすべてクリア...」で一括削除も可能です。</li>
-          <li><strong>既定の解像度 (OBS用)：</strong><code>1920 × 1080 (FHD 16:9)</code>、<code>1280 × 720 (HD 16:9)</code>、<code>1080 × 1080 (1:1 正方形)</code>、<code>854 × 480 (SD 16:9)</code> にサイズを一発変更できます。</li>
-        </ul>
-
-        <h3>Alt吸着グリッドサイズ</h3>
-        <p>
-          <code>Alt</code> キーを押しながら移動・リサイズする際のスナップ間隔を <code>10 px</code> / <code>20 px (標準)</code> / <code>50 px</code> / <code>100 px</code> から選択できます。
-        </p>
-
-        <h3>枠の太さ・不透明度・色（ホバープレビュー対応）</h3>
-        <ul>
-          <li><strong>枠の太さ：</strong><code>2 px</code> / <code>4 px</code> / <code>6 px</code> / <code>8 px</code> から選択できます。</li>
-          <li><strong>枠線の不透明度：</strong><code>100% (標準)</code> 〜 <code>10%</code> の10段階で調整できます。</li>
-          <li><strong>枠の色：</strong><code>赤 (Red)</code> / <code>青 (Cyan)</code> / <code>緑 (Lime)</code> / <code>黄 (Yellow)</code> / <code>白 (White)</code> から選択できます。</li>
-        </ul>
-        <p>
-          これらの項目はメニューにマウスカーソルを合わせるだけでリアルタイムにプレビューされ、クリックすると確定します。
-        </p>
-
-        <h3>OBS Studio 連携（WebSocket）</h3>
-        <p>
-          OBS Studio の「ツール ＞ WebSocketサーバー設定」を有効にすることで、MH-TranSquare とOBSをリアルタイムに連携できます。「OBS 連携設定...」から以下の設定を行えます。
-        </p>
-        <ul>
-          <li><strong>接続設定：</strong>ホスト（初期値：<code>127.0.0.1</code>）、ポート番号（初期値：<code>4455</code>）、パスワードを設定し、「接続テスト」で疎通確認できます。</li>
-          <li><strong>配信中・録画中に枠の色を自動連動する：</strong>OBSの状態に応じて枠の色が自動変化します（配信中：<strong>緑</strong>、録画中：<strong>赤</strong>、配信と録画の両方：<strong>紫</strong>、待機中：設定した通常色）。</li>
-          <li><strong>枠の位置・サイズ変更をOBSのクロップに自動同期する：</strong>MH-TranSquare の枠を動かしたりサイズ変更したりすると、OBS側の該当ソースのクロップ（切り抜き）数値がリアルタイムに更新されます。</li>
-          <li><strong>OBS からクロップを読み込む：</strong>OBS接続時にメニューの「OBS からクロップを読み込む」を押すと、OBS側で現在設定されているクロップ位置・サイズに合わせて枠をぴったり吸着させます。</li>
-        </ul>
-        <p>
-          <strong>マルチモニター環境でのご注意：</strong>クロップ位置は「現在枠があるモニターの左上」を基準に計算されます。OBS連携を使う場合は、<strong>OBSの「画面キャプチャ」ソースで映しているモニター内に枠を置いて</strong>ご利用ください（モニター境界をまたぐとはみ出た分が切り落とされ、別のモニターへ枠を完全に移すとそのモニター基準の座標でOBS側の映像が切り抜かれます）。なお、同期対象は現在のシーン内の <code>Transquare</code> または <code>画面キャプチャ</code> / <code>Display Capture</code> を含むソースが優先されます。
-        </p>
-
-        <h3>言語・設定のリセット・その他</h3>
-        <ul>
-          <li><strong>言語 (Language)：</strong><code>日本語</code> / <code>English</code> をいつでも切り替えられます（初回起動時はOS言語を自動判定）。</li>
-          <li><strong>設定をリセット...：</strong>位置・サイズ・表示スタイルを初期状態に戻します。</li>
-          <li><strong>MH-TranSquare について... / ヘルプ：</strong>バージョン情報・ライセンス確認や公式ヘルプページを開けます。</li>
-        </ul>
-      </section>
-
-      <section class="doc-section">
-        <h2>主な仕様・動作環境</h2>
-        <table class="spec-table">
-          <tbody>
-            <tr>
-              <th>対応OS</th>
-              <td>Windows 10 / Windows 11 (64bit)</td>
-            </tr>
-            <tr>
-              <th>配布形態</th>
-              <td>BOOTH（ポータブル版・ランタイム不要の自己完結型） / Microsoft Store</td>
-            </tr>
-            <tr>
-              <th>設定ファイルの保存先</th>
-              <td><code>%AppData%\MahorobaLab\MHTranSquare\settings.json</code></td>
-            </tr>
-            <tr>
-              <th>データ送信</th>
-              <td>なし（すべてローカル処理。BOOTH版のみ起動時にGitHub公開JSONで更新確認を実施。OBS連携はローカルのWebSocket通信を使用）</td>
-            </tr>
-            <tr>
-              <th>商用・配信利用</th>
-              <td>個人利用・商用利用・収益化配信での利用可能（クレジット表記不要）</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section class="doc-section">
-        <h2>関連ヘルプ・トラブルシューティング</h2>
-        <p>
-          SmartScreenの警告が出た場合や、OBS Studioでの透過・キャプチャ設定、アンインストール手順については、ポータルの<a href="../index.html#faq">共通ヘルプ・よくある質問（FAQ）</a>をご参照ください。
-        </p>
-      </section>
-
-      <nav class="doc-nav-footer" aria-label="ドキュメント移動">
-        <a href="../index.html#apps" class="btn btn-secondary">← アプリ一覧へ戻る</a>
-        <div class="footer-links">
-          <a href="mhtranstroke.html">MH-TranStroke ヘルプ</a>
-          <a href="mhtranscreen.html">MH-TranScreen ヘルプ</a>
-        </div>
-      </nav>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-bottom" style="padding-top: 0;">
-        <p>© まほろばラボ（Mahoroba Lab）</p>
-        <div class="footer-links">
-          <a href="../index.html">ポータルトップ</a>
-          <a href="../index.html#privacy">プライバシーポリシー</a>
-          <a href="https://x.com/mahorobalab" target="_blank" rel="noopener noreferrer">X（@mahorobalab）</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
