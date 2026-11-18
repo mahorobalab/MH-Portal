@@ -80,6 +80,9 @@
         <ul>
           <li><strong>Full Click-Through:</strong> Continue playing games or working in apps right through the overlay without interruption.</li>
           <li><strong>Fixed Key HUD &amp; Dynamic Strokes:</strong> Fixed HUD groups for Function keys (F1–F12), Modifiers, Space, and Arrow keys, plus dynamic pop-up display for characters, symbols, and merged shortcuts (such as <code>Ctrl + C</code>).</li>
+          <li><strong>Mouse Display &amp; Cursor Highlight:</strong> Real-time Mouse HUD showing left/right/middle clicks, scroll wheel, side buttons (Back/Forward), and movement direction circle, plus a cursor circle highlight and optional mouse click/wheel display in Dynamic Strokes.</li>
+          <li><strong>Keystroke History:</strong> Displays a chronological log of recent keystrokes and mouse actions on screen, with options to deduplicate consecutive repeats and customize font, size, and max items.</li>
+          <li><strong>Presets:</strong> Save up to 4 sets of settings and layouts as presets and switch instantly via <code>Shift + F9</code>, the system tray menu, or the on-screen Preset Launcher.</li>
           <li><strong>Three Visual Styles:</strong> Choose from clean <strong>Simple</strong>, glowing <strong>Neon</strong>, or animated <strong>Gaming</strong> RGB modes (Sync, Wave, Reactive).</li>
           <li><strong>Flexible Layout Customization:</strong> Drag any key group anywhere on screen and resize individually. Layouts are automatically saved per display and resolution.</li>
           <li><strong>Multi-Monitor Simultaneous Display:</strong> Show keystrokes across multiple selected monitors at once, automatically adapting to cable changes or resolution updates.</li>
@@ -120,6 +123,13 @@
               </td>
             </tr>
             <tr>
+              <th>Switch Preset</th>
+              <td>
+                <code>Shift + F9</code> (can be changed to double-press in Settings)<br>
+                Or use the &ldquo;🎭 Presets&rdquo; tray submenu / click the on-screen Preset Launcher
+              </td>
+            </tr>
+            <tr>
               <th>Top-Right Logo Actions</th>
               <td>
                 <strong>Left-drag:</strong> Move the logo badge<br>
@@ -137,22 +147,22 @@
       <section class="doc-section">
         <h2>Settings Reference</h2>
         <p>
-          Open &ldquo;⚙ Settings&rdquo; from the system tray right-click menu to customize everything with live preview. The buttons at the top-right of the Settings window let you switch Language (Auto / JA / EN) and UI Theme (Auto / Dark / Light).
+          Open &ldquo;⚙ Settings&rdquo; from the system tray right-click menu to customize options organized into four tabs—<strong>General</strong>, <strong>Appearance</strong>, <strong>Keys &amp; Mouse</strong>, and <strong>History &amp; Presets</strong>—with live preview. The buttons at the top-right of the Settings window let you switch Language (Auto / JA / EN) and UI Theme (Auto / Dark / Light).
         </p>
 
-        <h3>Target Displays (Multi-Monitor Simultaneous)</h3>
+        <h3>[General] Target Displays (Multi-Monitor Simultaneous)</h3>
         <p>
           Simultaneously displays keystrokes on all checked monitors. Use &ldquo;All Screens&rdquo; or &ldquo;Primary Only&rdquo; for quick selection. The overlay automatically adapts to monitor connection/disconnection, and layouts are saved separately per display, resolution, and DPI scale.
         </p>
 
-        <h3>Stealth Mode Toggle &amp; Shortcut Options</h3>
+        <h3>[General] Stealth Mode Toggle &amp; Shortcut Options</h3>
         <p>
-          If <code>Shift + F11</code> or <code>Shift + F12</code> conflicts with another game or application, enable &ldquo;<strong>Require double-press of function keys for shortcuts</strong>&rdquo; to prevent accidental triggers while keeping quick double-tap access.
+          If <code>Shift + F9</code>, <code>Shift + F11</code>, or <code>Shift + F12</code> conflicts with another game or application, enable &ldquo;<strong>Require double-press of function keys for shortcuts</strong>&rdquo; to prevent accidental triggers while keeping quick double-tap access.
         </p>
 
-        <h3>Size &amp; Position Edit Mode</h3>
+        <h3>[General] Size &amp; Position Edit Mode</h3>
         <p>
-          Enabling this mode temporarily turns off click-through so you can freely arrange the five key groups (Function Keys, Modifier Keys, Space Key, Arrow Keys, and Dynamic Strokes).
+          Enabling this mode temporarily turns off click-through so you can freely arrange each overlay group (Function Keys, Modifier Keys, Space Key, Arrow Keys, Dynamic Strokes, Mouse Display, Keystroke History, and Preset Launcher).
         </p>
         <ul>
           <li><strong>Individual Move &amp; Resize:</strong> Drag any group frame to reposition it. Scroll the mouse wheel over a group or drag its bottom-right grip to resize individually (0.5x–3.0x).</li>
@@ -160,30 +170,30 @@
           <li><strong>Reset Layout:</strong> Click &ldquo;🔄 Reset Size and Position to Default&rdquo; to restore the default layout for the current display.</li>
         </ul>
 
-        <h3>Overall Opacity &amp; Quick Slider</h3>
+        <h3>[Appearance] Overall Opacity &amp; Quick Slider</h3>
         <ul>
           <li><strong>Opacity:</strong> Adjust overall overlay opacity from 20% to 100% (default: 85%).</li>
           <li><strong>Show vertical opacity slider on screen right:</strong> Keeps a compact vertical bar on the right edge of the screen for quick opacity and global scale (<code>+/-</code> and <code>1.0x</code> reset) adjustments during a stream.</li>
         </ul>
 
-        <h3>Visual Style &amp; Neon Color</h3>
+        <h3>[Appearance] Visual Style &amp; Neon Color</h3>
         <ul>
           <li><strong>Simple:</strong> Clean monochrome translucent style suited for tutorials and calm work streams.</li>
           <li><strong>Neon:</strong> Glowing neon-tube effect. Pick any color with the HEX color picker or choose from five presets (Cyber Cyan, Neon Magenta, Gaming Green, Sunset Orange, White).</li>
           <li><strong>Gaming:</strong> 7-color RGB gradient animation with three modes: <strong>Sync (Cycle)</strong>, <strong>Wave (Flow)</strong>, and <strong>Reactive (Keypress)</strong>.</li>
         </ul>
 
-        <h3>Frame Background</h3>
+        <h3>[Appearance] Frame Background</h3>
         <p>
           Choose the key HUD background from <strong>Dark Translucent</strong>, <strong>Transparent</strong>, or <strong>Custom Color</strong> (with alpha channel transparency control).
         </p>
 
-        <h3>Modifier Keys Order</h3>
+        <h3>[Keys &amp; Mouse] Modifier Keys Order</h3>
         <p>
           Customize the order of the bottom-left modifier keys (<code>Tab</code>, <code>Win</code>, <code>Ctrl</code>, <code>Shift</code>, <code>Alt</code>) to match your keyboard layout. Drag and drop the buttons, click <code>◀</code> / <code>▶</code>, or select a preset such as Programmer, Standard Full, Gaming, Windows Standard, or Without Tab.
         </p>
 
-        <h3>Key Visibility</h3>
+        <h3>[Keys &amp; Mouse] Key Visibility</h3>
         <p>
           Toggle each overlay element individually on or off:
         </p>
@@ -194,6 +204,38 @@
           <li>Show Space Key</li>
           <li>Show Arrow Keys (↑ ← ↓ →)</li>
           <li>Show Dynamic Strokes (Characters &amp; Shortcuts)</li>
+        </ul>
+
+        <h3>[Keys &amp; Mouse] Mouse Display Settings</h3>
+        <p>
+          Customize how mouse actions are visualized on screen:
+        </p>
+        <ul>
+          <li><strong>Show Side Button 1 (Back) / Show Side Button 2 (Forward):</strong> Toggle side buttons on the Mouse HUD.</li>
+          <li><strong>Show Direction Circle:</strong> Toggle the movement direction indicator on the Mouse HUD.</li>
+          <li><strong>Show Cursor Circle &amp; Size:</strong> Toggle the highlight circle around the mouse cursor and adjust its size (10%–100%).</li>
+          <li><strong>Show Mouse Click &amp; Wheel in Dynamic Strokes:</strong> Also pop up mouse clicks and wheel events alongside keystrokes in Dynamic Strokes.</li>
+          <li><strong>Mouse Color:</strong> Customize the Mouse HUD body color via the color picker or color presets.</li>
+        </ul>
+
+        <h3>[History &amp; Presets] History</h3>
+        <p>
+          Customize the on-screen Keystroke History panel:
+        </p>
+        <ul>
+          <li><strong>Show Keystroke History:</strong> Toggle the scrolling keystroke history panel.</li>
+          <li><strong>Record Mouse Clicks &amp; Wheel:</strong> Choose whether to include mouse clicks and wheel events in the history log.</li>
+          <li><strong>Deduplicate Consecutive Keys:</strong> Collapse repeated presses of the same key (2+ repeats).</li>
+          <li><strong>Font / Font Size / Max Items:</strong> Adjust the font family, text size, and maximum number of displayed history entries.</li>
+        </ul>
+
+        <h3>[History &amp; Presets] Preset Display</h3>
+        <p>
+          Manage up to 4 presets (Apply, Save, Rename, Clear All) from the &ldquo;🎭 Presets&rdquo; submenu in the system tray, and configure on-screen preset feedback:
+        </p>
+        <ul>
+          <li><strong>Fade-out Toast (Notify on switch):</strong> Display a brief fade-out notification when switching presets (e.g., via <code>Shift + F9</code>).</li>
+          <li><strong>Show Preset Launcher (Click to switch):</strong> Keep a compact preset switcher bar on screen, with configurable layout (<strong>Horizontal</strong> / <strong>Vertical</strong>) and behavior (<strong>Click (Switchable, opaque)</strong> / <strong>Transparent (Display only)</strong>).</li>
         </ul>
       </section>
 
