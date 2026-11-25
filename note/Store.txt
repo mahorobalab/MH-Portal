@@ -1,23 +1,24 @@
 BOOTH
     https://manage.booth.pm/
 
-    MH-TranSquare
-    https://mahorobalab.booth.pm/items/9150044
-
-    MH-TranScreen
-    https://mahorobalab.booth.pm/items/9150259
-
     MH-TranStroke
     https://mahorobalab.booth.pm/items/9150270
+
+    MH-TranSquare
+    https://mahorobalab.booth.pm/items/9150259
+
+    MH-TranScreen
+    https://mahorobalab.booth.pm/items/9150259 x ↑ 勘違いして MH-TranSquare で公開した MH-TranScreenは、ペンディング
+
 
 ----
 MS Store
 
+    MH-TranStroke
+    https://apps.microsoft.com/detail/9N3MZCJGKTMC
+
     MH-TranSquare 
     https://apps.microsoft.com/detail/9MWCC31HVM4F
 
-    MH-TranScreen
+    MH-TranScreen → リリース予定なし ペンディング
     https://apps.microsoft.com/detail/9ND15SXK505D
-
-    MH-TranStroke
-    https://apps.microsoft.com/detail/9N3MZCJGKTMC

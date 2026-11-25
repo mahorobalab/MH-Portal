@@ -507,6 +507,10 @@ code {
 }
 
 /* SBOM Weather Horizontal Banner Card */
+.apps-grid + .weather-banner {
+  margin-top: 1.5rem;
+}
+
 .weather-banner {
   background-color: var(--bg-weather);
   border: 1px solid var(--border-weather);
